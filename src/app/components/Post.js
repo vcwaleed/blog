@@ -5,11 +5,11 @@ export default function Post() {
     return (
         <div className="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-9">
             <span className="font-bold text-xl">Latest Posts</span>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-1 mt-6 p-0">
                 {fakePosts.map((post) => (
                     <div
                         key={post.id}
-                        className="w-[85%] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+                        className="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mb-4 p-0"
                     >
                         <Link href="#">
                             <Image

@@ -3,19 +3,19 @@ import Image from "next/image";
 
 export default function ImageBanner() {
     return (
-        <>     
-            
-                <div className="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-8">
-                    <div className="flex flex-col items-center justify-center">
-                        <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
-                            Welcome to the Blog
-                        </h1>
-                        <p className="text-gray-600 dark:text-gray-300">
-                            A place to share your knowledge and experiences
-                        </p>
-                    </div>
+        <>
+
+            <div className="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-8">
+                <div className="flex flex-col items-center justify-center">
+                    <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+                        Welcome to the Blog
+                    </h1>
+                    <p className="text-gray-600 dark:text-gray-300">
+                        A place to share your knowledge and experiences
+                    </p>
                 </div>
-            
+            </div>
+
             <div className="relative flex items-center justify-center mb-20">
                 <Image
                     src="/banner1.jpg"

@@ -14,7 +14,7 @@ export default function ArticlePage({ params }) {
     }, [params]);
     if (!id) {
 
-        return <Loader/>;
+        return <Loader />;
     }
     const article = fakePosts.find((post) => post.id === parseInt(id));
 
@@ -23,9 +23,9 @@ export default function ArticlePage({ params }) {
     }
     return (
         <div className="max-w-screen-md mx-auto p-6">
-             <span className="bg-blue-500 text-white text-sm p-2 rounded-md px-2 pb-2">
-                                {article.impact}
-                            </span>
+            <span className="bg-blue-500 text-white text-sm p-2 rounded-md px-2 pb-2">
+                {article.impact}
+            </span>
             <h1 className="text-3xl font-bold mb-4 my-6">{article.title}</h1>
             <div className=" flex mt-6 text-gray-500 space-x-4 mb-3">
                 <p>{article.person}</p>
@@ -37,12 +37,12 @@ export default function ArticlePage({ params }) {
                 width={500}
                 height={350}
                 className="rounded-lg w-[85%]"
-                objectFit="cover"/>
+                objectFit="cover" />
             <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">{article.description}</p>
             <p className="mt-4 text-sm    text-gray-500 dark:text-gray-300">{article.summary}</p>
             <Link href='/' className="text-blue-500 hover:text-blue-700 underline">
                 Go to home
-            </Link>  
+            </Link>
         </div>
     );
 }
