@@ -12,6 +12,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        tech:"rgb(246, 248, 255)",
+        techblue:"rgb(104,131,251)"
       },
     },
   },
