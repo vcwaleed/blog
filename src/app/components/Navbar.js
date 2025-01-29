@@ -1,15 +1,15 @@
-
 'use client'
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <>
-            <nav className="bg-white border-gray-200 dark:bg-gray-900">
+            <nav className="bg-white border-gray-200  dark:bg-gray-800">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     {/* Logo */}
                     <Link
@@ -17,19 +17,16 @@ export default function Navbar() {
                         className="flex items-center space-x-1 rtl:space-x-reverse"
                     >
                         <Image
-                            src="/blog.png" // Replace with the path to your logo
+                            src="/logo12.png"
                             height={3}
-                            width={70}
-                            className="h-12"
+                            width={80}
+                            className="h-16"
                             alt="Blog Logo"
                         />
                         <span className="self-center text-xl  whitespace-nowrap dark:text-white">
                             <span className="">Waleed</span><span className="font-semibold">Blog</span>
                         </span>
                     </Link>
-
-
-                    {/* Hamburger Menu Button */}
                     <button
                         type="button"
                         className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
@@ -103,7 +100,7 @@ export default function Navbar() {
                                 className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-md  focus:border-orange-700"
                                 placeholder="Search..."
                             />
-                            <div className="absolute inset-y-0 right-3 flex items-center pl-3 pointer-events-none">
+                            <div className="absolute inset-y-0 right-3 flex  md:flex items-center pl-3 pointer-events-none sm:hidden">
                                 <svg
                                     className="w-5 h-5 text-gray-500 dark:text-gray-400"
                                     fill="none"
@@ -119,6 +116,9 @@ export default function Navbar() {
                                     />
                                 </svg>
                             </div>
+                        </div>
+                        <div className="scroll-pl-52">
+                            <ThemeToggle />
                         </div>
                     </div>
                 </div>

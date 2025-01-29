@@ -34,9 +34,9 @@ export default function ArticlePage({ params }) {
             <Image
                 src={article.image}
                 alt={article.title}
-                width={500}
-                height={350}
-                className="rounded-lg w-[85%]"
+                width={700}
+                height={0}
+                className="rounded-lg w-[100%]"
                 objectFit="cover" />
             <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">{article.description}</p>
             <p className="mt-4 text-sm    text-gray-500 dark:text-gray-300">{article.summary}</p>

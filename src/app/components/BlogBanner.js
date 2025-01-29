@@ -2,14 +2,14 @@ import Image from 'next/image';
 
 export default function BlogBanner() {
     return (
-        <div className="max-w-screen-xl mx-auto px-4 py-10 ">
-            <div className="flex flex-col bg-gray-100 p-6 rounded-lg shadow-md items-center">
+        <div className="max-w-screen-xl mx-auto px-4 py-10 dark:bg-backgroundcolor ">
+            <div className="flex flex-col bg-gray-100 p-6 rounded-lg shadow-md items-center dark:bg-bannercolor">
                 <div className="flex items-center mb-4">
-                    <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
+                    <div className="w-[70px] h-[60px] rounded-full overflow-hidden">
                         <Image
                             src="/blog.png"
                             alt="Your Image"
-                            width={60}
+                            width={80}
                             height={20}
                             objectFit="cover"
                         />
@@ -19,7 +19,7 @@ export default function BlogBanner() {
                         <span className="text-gray-500 dark:text-white ml-5 text-sm">Collaborator & Editor</span>
                     </div>
                 </div>
-                <p className='w-[600px] pl-9 text-gray-500 '>Meet Talha Waleed, a passionate writer and blogger with a love for technology and travel. Jonathan holds a degree in Computer Science and has spent years working in the tech industry, gaining a deep understanding of the impact technology has on our lives.</p>
+                <p className='w-full flex justify-center text-lg  text-gray-500 dark:text-gray-500 '>Meet Talha Waleed, a passionate writer and blogger with a love for technology and travel.<br /> Jonathan holds a degree in Computer Science and has spent years working in the tech industry, <br />gaining a deep understanding of the impact technology has on our lives.</p>
                 <div className="flex justify-center mt-6 space-x-6 ">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 rounded  text-gray-400 hover:text-blue-800" fill="currentColor" viewBox="0 0 24 24">
